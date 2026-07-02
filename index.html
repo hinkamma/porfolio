@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freddy Hinkamma — Développeur Full-Stack</title>
+<meta name="description" content="Portfolio de Freddy Hinkamma, développeur full-stack — Laravel, Angular, Flutter, FastAPI.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ BRUIT DE FOND / GRILLE DE PLAN ============ -->
+<div class="blueprint-grid" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a href="#accueil" class="logo">
+      <span class="logo-mark">FH</span>
+      <span class="logo-full">Freddy&nbsp;Hinkamma</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#accueil" class="nav-link"><span class="nav-index">00</span>Accueil</a>
+      <a href="#apropos" class="nav-link"><span class="nav-index">01</span>À propos</a>
+      <a href="#competences" class="nav-link"><span class="nav-index">02</span>Stack</a>
+      <a href="#projets" class="nav-link"><span class="nav-index">03</span>Projets</a>
+      <a href="#parcours" class="nav-link"><span class="nav-index">04</span>Parcours</a>
+      <a href="#contact" class="nav-link"><span class="nav-index">05</span>Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-ghost header-cta">Disponible pour missions</a>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Basculer entre le mode clair et le mode sombre" aria-pressed="false">
+        <span class="theme-label" id="theme-label">Clair</span>
+        <span class="theme-switch"></span>
+      </button>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="accueil">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Développeur Full-Stack — Douala, Cameroun</p>
+
+        <h1 class="hero-title">
+          Je conçois des systèmes<br>
+          <span class="hero-title-accent">du serveur à l'écran.</span>
+        </h1>
+
+        <p class="hero-lede">
+          Étudiant en Master&nbsp;1 Développement d'Applications à l'Université de Douala,
+          je construis des plateformes complètes — API robustes, interfaces soignées,
+          applications mobiles et briques d'intelligence artificielle.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+
+        <div class="hero-tags" aria-hidden="true">
+          <span class="tag" data-line>Angular</span>
+          <span class="tag" data-line>Laravel</span>
+          <span class="tag" data-line>Flutter</span>
+          <span class="tag" data-line>FastAPI</span>
+          <span class="tag" data-line>PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+
+        <figure class="hero-photo">
+          <div class="hero-photo-frame" id="hero-photo-frame">
+            <img src="img/pp2.jpg" alt="Photo de Freddy Hinkamma" id="hero-photo-img">
+            <div class="hero-photo-fallback" aria-hidden="true">
+              <span class="hero-photo-fallback-mark">FH</span>
+              <span class="hero-photo-fallback-text">assets/photo.jpg</span>
+            </div>
+            <span class="hero-photo-tick hero-photo-tick-tl"></span>
+            <span class="hero-photo-tick hero-photo-tick-br"></span>
+          </div>
+          <figcaption class="hero-photo-caption">FIG. 01 — PORTRAIT</figcaption>
+        </figure>
+
+        <div class="hero-terminal" role="img" aria-label="Terminal simulant l'exécution d'une commande de présentation">
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-title">freddy@portfolio — zsh</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <!-- rempli par js/script.js -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-scale" aria-hidden="true">
+      <span>ÉCH. 1:1</span>
+      <span class="scale-line"></span>
+      <span>REV. 2026</span>
+    </div>
+  </section>
+
+  <!-- ============ À PROPOS ============ -->
+  <section class="section" id="apropos">
+    <div class="section-inner">
+      <p class="section-eyebrow"><span class="section-index">01</span>À propos</p>
+
+      <div class="apropos-grid">
+        <h2 class="section-title">
+          Du cahier des charges<br>à la mise en production.
+        </h2>
+
+        <div class="apropos-body">
+          <p>
+            Je m'appelle <strong>Freddy Roland Hinkamma Sakamsou</strong>. Je conçois des applications
+            complètes en tant que développeur full-stack : back-end Laravel, front-end Angular,
+            applications mobiles Flutter, et micro-services Python/FastAPI pour les fonctionnalités
+            d'intelligence artificielle.
+          </p>
+          <p>
+            Mon approche est méthodique — modélisation UML, conception de bases de données,
+            architecture logicielle — avant d'écrire la moindre ligne de code. J'aime les projets
+            qui résolvent un vrai problème métier, du recrutement à la gestion de stock.
+          </p>
+          <p>
+            Je dirige également l'équipe de formation du <strong>Digital&nbsp;Bootcamp</strong>,
+            dont la mission est d'initier les apprenants aux outils du numérique à travers
+            des formations pratiques.
+          </p>
+
+          <ul class="apropos-facts">
+            <li><span>Localisation</span>Douala, Cameroun</li>
+            <li><span>Formation</span>Master 1 — Développement d'Applications, Univ. de Douala</li>
+            <li><span>Disponibilité</span>Missions freelance &amp; projets professionnels</li>
+            <li><span>Langues</span>Français, Anglais technique</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPÉTENCES / STACK ============ -->
+  <section class="section section-alt" id="competences">
+    <div class="section-inner">
+      <p class="section-eyebrow"><span class="section-index">02</span>Stack technique</p>
+      <h2 class="section-title">Cinq couches, un seul système.</h2>
+      <p class="section-intro">
+        Comme dans une coupe technique de bâtiment, chaque couche de mon stack a un rôle précis
+        et s'articule avec les autres. Survolez une couche pour en voir le détail.
+      </p>
+
+      <div class="stack-diagram" id="stack-diagram">
+
+        <button class="stack-layer" data-layer="interface" type="button" aria-expanded="false">
+          <div class="stack-layer-head">
+            <span class="stack-layer-index">L05</span>
+            <span class="stack-layer-name">Interface</span>
+            <span class="stack-layer-tech">Angular · TypeScript · RxJS</span>
+            <span class="stack-layer-plus">+</span>
+          </div>
+          <div class="stack-layer-detail">
+            Composants, signals, routing et gestion d'état réactive pour des interfaces
+            rapides et maintenables.
+          </div>
+        </button>
+
+        <button class="stack-layer" data-layer="mobile" type="button" aria-expanded="false">
+          <div class="stack-layer-head">
+            <span class="stack-layer-index">L04</span>
+            <span class="stack-layer-name">Mobile</span>
+            <span class="stack-layer-tech">Flutter · Dart</span>
+            <span class="stack-layer-plus">+</span>
+          </div>
+          <div class="stack-layer-detail">
+            Applications mobiles multiplateformes, connectées aux mêmes API que le web.
+          </div>
+        </button>
+
+        <button class="stack-layer" data-layer="serveur" type="button" aria-expanded="false">
+          <div class="stack-layer-head">
+            <span class="stack-layer-index">L03</span>
+            <span class="stack-layer-name">Serveur</span>
+            <span class="stack-layer-tech">Laravel · Sanctum · REST</span>
+            <span class="stack-layer-plus">+</span>
+          </div>
+          <div class="stack-layer-detail">
+            API sécurisées, authentification, ressources structurées, pagination et
+            limitation de débit.
+          </div>
+        </button>
+
+        <button class="stack-layer" data-layer="donnees" type="button" aria-expanded="false">
+          <div class="stack-layer-head">
+            <span class="stack-layer-index">L02</span>
+            <span class="stack-layer-name">Données</span>
+            <span class="stack-layer-tech">PostgreSQL · MySQL</span>
+            <span class="stack-layer-plus">+</span>
+          </div>
+          <div class="stack-layer-detail">
+            Modélisation Merise/UML, schémas normalisés, requêtes optimisées.
+          </div>
+        </button>
+
+        <button class="stack-layer" data-layer="intelligence" type="button" aria-expanded="false">
+          <div class="stack-layer-head">
+            <span class="stack-layer-index">L01</span>
+            <span class="stack-layer-name">Intelligence</span>
+            <span class="stack-layer-tech">Python · FastAPI · ML</span>
+            <span class="stack-layer-plus">+</span>
+          </div>
+          <div class="stack-layer-detail">
+            Micro-services d'analyse et de recommandation branchés sur le reste du système.
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJETS ============ -->
+  <section class="section" id="projets">
+    <div class="section-inner">
+      <p class="section-eyebrow"><span class="section-index">03</span>Projets</p>
+      <h2 class="section-title">Sélection de projets.</h2>
+
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="project-card-head">
+            <span class="project-spec">DOC. N°01</span>
+            <span class="project-status">Marketplace</span>
+          </div>
+          <h3 class="project-title">Artisan237</h3>
+          <p class="project-desc">
+            Marketplace mettant en relation artisans et clients, enrichie de recommandations
+            par apprentissage automatique et d'un système de gamification.
+          </p>
+          <ul class="project-tags">
+            <li>Laravel</li><li>Angular</li><li>ML</li><li>MySQL</li>
+          </ul>
+          <div class="project-more">Voir le détail</div>
+          <div class="project-detail">
+            <div class="project-detail-inner">
+              <ul>
+                <li>Modélisation UML complète (cas d'usage, classes, séquences)</li>
+                <li>Recommandations d'artisans par apprentissage automatique</li>
+                <li>Système de badges et de points pour fidéliser les utilisateurs</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="project-card-head">
+            <span class="project-spec">DOC. N°02</span>
+            <span class="project-status">API bancaire</span>
+          </div>
+          <h3 class="project-title">BankConnect</h3>
+          <p class="project-desc">
+            API REST bancaire — authentification Sanctum, ressources structurées,
+            pagination et limitation de débit pour un usage en production.
+          </p>
+          <ul class="project-tags">
+            <li>Laravel</li><li>Sanctum</li><li>REST API</li>
+          </ul>
+          <div class="project-more">Voir le détail</div>
+          <div class="project-detail">
+            <div class="project-detail-inner">
+              <ul>
+                <li>Authentification par jetons avec Laravel Sanctum</li>
+                <li>API Resources pour structurer les réponses JSON</li>
+                <li>Pagination et limitation de débit pour la production</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0" role="button" aria-expanded="false">
+          <div class="project-card-head">
+            <span class="project-spec">DOC. N°03</span>
+            <span class="project-status">SaaS</span>
+          </div>
+          <h3 class="project-title">AutoStock</h3>
+          <p class="project-desc">
+            Solution SaaS intelligente de gestion de stock, conçue avec une modélisation
+            UML complète et un dossier de conception détaillé.
+          </p>
+          <ul class="project-tags">
+            <li>Laravel</li><li>Angular</li><li>PostgreSQL</li>
+          </ul>
+          <div class="project-more">Voir le détail</div>
+          <div class="project-detail">
+            <div class="project-detail-inner">
+              <ul>
+                <li>Cahier des charges et dossier de conception avec 26 diagrammes de séquence</li>
+                <li>Suivi des stocks en temps réel avec alertes de seuil</li>
+                <li>Architecture pensée pour un usage multi-entreprises (SaaS)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARCOURS ============ -->
+  <section class="section section-alt" id="parcours">
+    <div class="section-inner">
+      <p class="section-eyebrow"><span class="section-index">04</span>Parcours</p>
+      <h2 class="section-title">Repères.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2024</span>
+            <h3>Licence e informatique</h3>
+            <p>Université de Douala. Approfondissement de l'architecture logicielle,
+              du génie logiciel et des méthodes numériques appliquées.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — 2026</span>
+            <h3>Master 1, Développement d'Applications</h3>
+            <p>Université de Douala. Approfondissement de l'architecture logicielle,
+              du génie logiciel et des méthodes numériques appliquées.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">En cours</span>
+            <h3>Responsable — Équipe de formation Digital Bootcamp</h3>
+            <p>Je dirige l'équipe de formation du Digital Bootcamp, dont l'objectif est
+              d'initier les apprenants aux outils du numérique. Nous proposons principalement
+              des formations pratiques (HTML, CSS, JavaScript) destinées aux lycéens.</p>
+
+            <figure class="timeline-proof">
+              <div class="timeline-proof-frame" id="bootcamp-photo-frame">
+                <img src="img/digital.jpg" alt="Photo de terrain — équipe Digital Bootcamp" id="bootcamp-photo-img">
+                <div class="timeline-proof-fallback" aria-hidden="true">
+                  <span class="timeline-proof-fallback-text">assets/bootcamp.jpg</span>
+                </div>
+              </div>
+              <figcaption class="timeline-proof-caption">FIG. 02 — PREUVE TERRAIN, DIGITAL BOOTCAMP</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact-section" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow"><span class="section-index">05</span>Contact</p>
+      <h2 class="section-title">Discutons de votre projet.</h2>
+      <p class="section-intro">
+        Ouvert aux missions freelance et aux opportunités professionnelles.
+        Laissez-moi un message, je réponds rapidement.
+      </p>
+
+      <div class="contact-grid">
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <p class="form-note" id="form-note">
+            Ce formulaire est une maquette : connectez-le à votre back-end
+            (Laravel API, mailto, ou un service comme Formspree) pour le rendre fonctionnel.
+          </p>
+        </form>
+
+        <div class="contact-info">
+          <a href="mailto:freddyrolandhinkamma877@gmail.com" class="contact-info-item">
+            <span class="contact-info-label">E-mail</span>
+            <span class="contact-info-value">freddyrolandhinkamma877@gmail.com</span>
+          </a>
+          <a href="https://github.com/hinkamma" target="_blank" rel="noopener" class="contact-info-item">
+            <span class="contact-info-label">GitHub</span>
+            <span class="contact-info-value">github.com/hinkamma</span>
+          </a>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Localisation</span>
+            <span class="contact-info-value">Douala, Cameroun</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Freddy Hinkamma — Tous droits réservés.</span>
+    <span class="footer-note">Conçu &amp; codé à Douala.</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

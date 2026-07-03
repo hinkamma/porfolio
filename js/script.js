@@ -194,17 +194,42 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ============================================================
      8. Formulaire de contact — démo front-end uniquement
   ============================================================ */
-  const contactForm = document.getElementById('contact-form');
-  const formNote = document.getElementById('form-note');
+  const form = document.getElementById('form');
+const submitBtn = form.querySelector('button[type="submit"]');
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      formNote.textContent = "Message prêt à être envoyé — connectez ce formulaire à un back-end pour l'activer réellement.";
-      formNote.style.color = 'var(--line-blue)';
-      formNote.style.borderLeftColor = 'var(--line-blue)';
-    });
-  }
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    formData.append("access_key", "9e126d56-fed3-4906-9c3d-ff287e7d41ac");
+
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
 
   /* ============================================================
      9. Header — ombre légère après scroll
@@ -223,3 +248,5 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 });
+
+

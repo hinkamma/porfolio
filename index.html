@@ -366,7 +366,8 @@
 
       <div class="contact-grid">
 
-        <form action="mailto:freddyrolandhinkamma877@gmail.com" method="post" enctype="text/plain" class="contact-form" id="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
+          <input type="hidden" name="access_key" value="9e126d56-fed3-4906-9c3d-ff287e7d41ac">
           <div class="form-row">
             <label for="name">Nom</label>
             <input type="text" id="name" name="name" placeholder="Votre nom" autocomplete="off" required>
@@ -380,10 +381,6 @@
             <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." autocomplete="off" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Envoyer le message</button>
-          <p class="form-note" id="form-note">
-            Ce formulaire est une maquette : connectez-le à votre back-end
-            (Laravel API, mailto, ou un service comme Formspree) pour le rendre fonctionnel.
-          </p>
         </form>
 
         <div class="contact-info">

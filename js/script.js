@@ -58,12 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const terminalBody = document.getElementById('terminal-body');
 
   const terminalLines = [
-    { type: 'prompt', text: 'whoami' },
     { type: 'out',    text: 'Freddy Roland Hinkamma' },
-    { type: 'prompt', text: 'cat stack.json' },
     { type: 'out',    text: '["Angular","Laravel","FastAPI","Mysql","PostgreSQL"]' },
     { type: 'prompt', text: 'php artisan --status' },
-    { type: 'out',    text: 'Disponible pour projets freelance ✓' },
+    { type: 'out',    text: 'Disponible pour projets freelance ' },
     { type: 'comment',text: '// prêt à construire votre prochain système' },
   ];
 

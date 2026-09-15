@@ -256,84 +256,58 @@
   <section class="section" id="projets">
     <div class="section-inner">
       <p class="section-eyebrow"><span class="section-index">03</span><span data-i18n="nav.projets">Projets</span></p>
-      <h2 class="section-title" data-i18n="projets.title">Sélection de projets.</h2>
+      <h2 class="section-title" data-i18n="projets.title">Projet à la une.</h2>
 
-      <div class="projects-grid">
+      <div class="projects-grid projects-grid-single">
         <article class="project-card" tabindex="0" role="button" aria-expanded="false">
           <div class="project-card-head">
             <span class="project-spec">DOC. N°01</span>
-            <span class="project-status" data-i18n="projets.p1.status">Projet de groupe</span>
+            <span class="project-status">Projet personnel</span>
           </div>
-          <h3 class="project-title">Artisan237</h3>
-          <p class="project-desc" data-i18n="projets.p1.desc">
-            Marketplace mettant en relation artisans et clients, enrichie de recommandations
-            par apprentissage automatique et d'un système de gamification.
-          </p>
-          <ul class="project-tags">
-            <li>NextJS</li><li>VueJS</li><li>ML</li><li>PostGresql</li>
-          </ul>
-          <div class="project-more" data-i18n="projets.voirdetail">Voir le détail</div>
-          <div class="project-detail">
-            <div class="project-detail-inner">
-              <ul>
-                <li data-i18n="projets.p1.l1">Modélisation UML complète (cas d'usage, classes, séquences)</li>
-                <li data-i18n="projets.p1.l2">Recommandations d'artisans par apprentissage automatique</li>
-                <li data-i18n="projets.p1.l3">Système de badges et de points pour fidéliser les utilisateurs</li>
-              </ul>
-            </div>
-          </div>
-        </article>
 
-        <article class="project-card" tabindex="0" role="button" aria-expanded="false">
-          <div class="project-card-head">
-            <span class="project-spec">DOC. N°02</span>
-            <span class="project-status" data-i18n="projets.p2.status">PROJET PERSO</span>
-          </div>
+          <!-- Capture d'écran du projet cliquable -->
+          <a href="https://bank-connect-front.vercel.app/login" target="_blank" rel="noopener" class="project-preview-link" title="Voir le projet BankConnect">
+            <figure class="project-preview">
+              <div class="project-preview-frame">
+                <img src="img/1.JPG" alt="Aperçu de l'application BankConnect" id="bankconnect-img">
+                <div class="project-preview-fallback" aria-hidden="true">
+                  <span class="project-preview-fallback-mark">BankConnect UI</span>
+                </div>
+              </div>
+            </figure>
+          </a>
+
           <h3 class="project-title">BankConnect</h3>
-          <p class="project-desc" data-i18n="projets.p2.desc">
-            API REST bancaire +INTERFACE — authentification Sanctum, ressources structurées,
-            pagination et limitation de débit pour un usage en production.
+          
+          <p class="project-desc" >
+            Une simple application bancaire concue dans l'optique de mettre en expertise les stack techniques que j'ai appris a savoir Laravel & Angular
+            BankConnect est une application bancaire qui permet aux utilisateurs de gérer leurs comptes, effectuer des transactions et suivre leurs finances de manière sécurisée et efficace.
           </p>
+
+          <!-- Technologies utilisées -->
           <ul class="project-tags">
-            <li>Laravel</li><li>Sanctum</li><li>REST API</li><li>Angular</li>
+            <li>Laravel</li>
+            <li>Angular</li>
+            <li>SQL</li>
           </ul>
+
+          <!-- Lien GitHub -->
+          <div class="project-links">
+            <a href="https://github.com/hinkamma" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              Voir le code sur GitHub
+            </a>
+          </div>
+
           <div class="project-more" data-i18n="projets.voirdetail">Voir le détail</div>
           <div class="project-detail">
             <div class="project-detail-inner">
               <ul>
-                <li data-i18n="projets.p2.l1">Authentification par jetons avec Laravel Sanctum</li>
-                <li data-i18n="projets.p2.l2">API Resources pour structurer les réponses JSON</li>
-                <li data-i18n="projets.p2.l3">Pagination et limitation de débit pour la production</li>
+                <li >Gestion sécurisée des données ( transactions)</li>
+                <li>Transfert, depot et retrait entre les comptes</li>
               </ul>
             </div>
           </div>
         </article>
-
-        <article class="project-card" tabindex="0" role="button" aria-expanded="false">
-          <div class="project-card-head">
-            <span class="project-spec">DOC. N°03</span>
-            <span class="project-status">SaaS</span>
-          </div>
-          <h3 class="project-title">AutoStock</h3>
-          <p class="project-desc" data-i18n="projets.p3.desc">
-            Solution SaaS intelligente de gestion de stock, conçue avec une modélisation
-            UML complète et un dossier de conception détaillé.
-          </p>
-          <ul class="project-tags">
-            <li>Laravel</li><li>Angular</li><li>PostgreSQL</li>
-          </ul>
-          <div class="project-more" data-i18n="projets.voirdetail">Voir le détail</div>
-          <div class="project-detail">
-            <div class="project-detail-inner">
-              <ul>
-                <li data-i18n="projets.p3.l1">Cahier des charges et dossier de conception avec 26 diagrammes de séquence</li>
-                <li data-i18n="projets.p3.l2">Suivi des stocks en temps réel avec alertes de seuil</li>
-                <li data-i18n="projets.p3.l3">Architecture pensée pour un usage multi-entreprises (SaaS)</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
       </div>
     </div>
   </section>

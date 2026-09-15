@@ -395,6 +395,62 @@ input, textarea { font: inherit; }
 }
 .tag:hover { border-color: var(--line-blue); color: var(--line-blue); transform: translateY(-2px); }
 
+
+/* ---------- Adaptation Projet Unique & Aperçu Image ---------- */
+.projects-grid-single {
+  grid-template-columns: 1fr;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-preview {
+  margin-bottom: 1.5rem;
+}
+
+.project-preview-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.project-preview-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-preview-fallback {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: var(--panel-strong);
+  color: var(--line-blue);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.project-preview-frame.img-missing .project-preview-fallback {
+  display: flex;
+}
+
+.project-links {
+  margin-top: 1.5rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.78rem;
+}
+
 /* ---------- Terminal ---------- */
 .hero-terminal {
   background: var(--panel);
@@ -817,4 +873,22 @@ a.contact-info-item:hover { transform: translateX(6px); color: var(--line-blue);
 @media (max-width: 380px) {
   .hero-title { font-size: 1.7rem; }
   .logo-mark { width: 30px; height: 30px; }
+}
+
+
+
+
+
+
+
+.project-preview-link {
+  display: block;
+  text-decoration: none;
+}
+
+.project-preview-link:hover .project-preview-frame {
+  border-color: var(--line-blue);
+  box-shadow: 0 0 15px var(--cursor-mix);
+  transform: scale(1.01);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
